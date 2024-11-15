@@ -18,7 +18,7 @@ type UltimosJogosProps = {
 const UltimosJogos = ({ jogos }: UltimosJogosProps) => {
   
   return <Grid container spacing={3}>
-  {jogos.map((jogo, index) => (
+  {jogos?.map((jogo, index) => (
     <Grid size={{ xs: 12, md: index > 0 ? 4 : 12 }} key={index}>
       <Card>
       <CardMedia
