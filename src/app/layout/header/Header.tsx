@@ -16,11 +16,12 @@ import { IconMenu } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
 
-interface ItemType {
+/* interface ItemType {
   toggleMobileSidebar: (event: React.MouseEvent<HTMLElement>) => void;
-}
+} */
 
-const Header = ({ toggleMobileSidebar }: ItemType) => {
+/* const Header = ({ toggleMobileSidebar }: ItemType) => { */
+const Header = () => {
   // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
   // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
 
@@ -45,7 +46,7 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
         <IconButton
           color="inherit"
           aria-label="menu"
-          onClick={toggleMobileSidebar}
+          /* onClick={toggleMobileSidebar} */
           sx={{
             display: {
               lg: "none",

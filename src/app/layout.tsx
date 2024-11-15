@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
           {/* ------------------------------------------- */}
           {/* Header */}
           {/* ------------------------------------------- */}
-          <Header toggleMobileSidebar={() => setMobileSidebarOpen(true)} />
+          <Header /* toggleMobileSidebar={() => setMobileSidebarOpen(true)} */ />
           {/* ------------------------------------------- */}
           {/* Page Route */}
           {/* ------------------------------------------- */}
