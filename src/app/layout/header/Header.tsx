@@ -8,7 +8,6 @@ import {
   IconButton,
   Typography
 } from "@mui/material";
-import PropTypes from "prop-types";
 
 // components
 import Profile from "./Profile";
@@ -82,10 +81,5 @@ const Header = () => {
       </ToolbarStyled>
     </AppBarStyled>
   );
-};
-
-Header.propTypes = {
-  sx: PropTypes.object,
-};
-
+}
 export default Header;
