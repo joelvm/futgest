@@ -2,15 +2,12 @@ import React from "react";
 import Link from "next/link";
 
 // mui imports
-import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { Theme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled, useTheme } from "@mui/material/styles";
 
 type NavGroup = {
@@ -43,7 +40,6 @@ export default function NavItem({
   level,
   pathDirect,
   hideMenu,
-  onClick,
 }: ItemType) {
   const Icon = item.icon;
   const theme = useTheme();
@@ -116,18 +112,6 @@ export default function NavItem({
       },
     },
   }));
-
-  const listItemProps: {
-    component: any;
-    href?: string;
-    target?: any;
-    to?: any;
-  } = {
-    component: item?.external ? "a" : Link,
-    to: item?.href,
-    href: item?.external ? item?.href : "",
-    target: item?.external ? "_blank" : "",
-  };
 
   return (
     <List component="li" disablePadding key={item?.id && item.title}>

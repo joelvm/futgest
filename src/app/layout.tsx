@@ -3,7 +3,7 @@ import { baselightTheme } from "@/utils/theme/DefaultColors";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { styled, Container, Box } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import Header from "@/app/layout/header/Header";
 import PageContainer from "./components/container/PageContainer";
 
@@ -24,7 +24,7 @@ const PageWrapper = styled("div")(() => ({
 
 export default function RootLayout({ children }: { children: React.ReactNode; }) {
 
-  const [mobileSidebarOpen, setMobileSidebarOpen ] = useState(false)
+  /* const [mobileSidebarOpen, setMobileSidebarOpen ] = useState(false) */
 
   return <html lang="pt">
     <PageContainer title="Fut. Quintas" description="this is Dashboard">

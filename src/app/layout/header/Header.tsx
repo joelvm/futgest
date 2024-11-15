@@ -13,7 +13,6 @@ import PropTypes from "prop-types";
 // components
 import Profile from "./Profile";
 import { IconMenu } from "@tabler/icons-react";
-import Logo from "../shared/logo/Logo";
 import Link from "next/link";
 import Image from "next/image";
 
